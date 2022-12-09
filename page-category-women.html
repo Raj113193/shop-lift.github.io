@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <div id="page" class="site page-cart">
+    <div id="page" class="site page-category">
 
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
@@ -165,7 +165,8 @@
                                                             </div>
                                                             <div class="text-content">
                                                                 <h4>Most Wanted</h4>
-                                                                <a href="page-offer.html" class="primary-button">Order Now</a>
+                                                                <a href="page-offer.html" 
+                                                                class="primary-button">Order Now</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -359,8 +360,8 @@
                                                 <p><strong>Rs.16,000</strong></p>
                                             </div>
                                             <div class="actions">
-                                                <a href="/cart.html" class="primary-button">Checkout</a>
-                                                <a href="/checkout.html" class="secondary-button">View Cart</a>
+                                                <a href="checkout.html" class="primary-button">Checkout</a>
+                                                <a href="cart.html" class="secondary-button">View Cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -591,157 +592,673 @@
 
         <main>
 
-            <div class="single-checkout">
+            <div class="single-category">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="checkout flexwrap">
-                            <div class="item left styled">
-                                <h1>Shipping Address</h1>
-                                <form action="">
-                                    <p>
-                                        <label for="email">Email Adress <span></span></label>
-                                        <input type="email" name="email" id="email" autocomplete="off" required>
-                                    </p>
-                                    <p>
-                                        <label for="fname">First Name <span></span></label>
-                                        <input type="text" id="frame" required>
-                                    </p>
-                                    <p>
-                                        <label for="lname">Last Name <span></span></label>
-                                        <input type="text" id="lrame" required>
-                                    </p>
-                                    <p>
-                                        <label for="cname">Company Name <span></span></label>
-                                        <input type="text" id="crame">
-                                    </p>
-                                    <p>
-                                        <label for="adress">Street Address  <span></span></label>
-                                        <input type="text" id="adress" required>
-                                    </p>
-                                    <p>
-                                        <label for="fname">City<span></span></label>
-                                        <input type="text" id="city" required>
-                                    </p>
-                                    <p>
-                                        <label for="fname">State/Province <span></span></label>
-                                        <input type="text" id="state" required>
-                                    </p>
-                                    <p>
-                                        <label for="fname">Zip / Postal Code <span></span></label>
-                                        <input type="number" id="postal" required>
-                                    </p>
-                                    <p>
-                                        <label for="country">Country</label>
-                                        <select name="country" id="country">
-                                            <option value=""></option>
-                                            <option value="1">Middle Earth</option>
-                                            <option value="2">United States</option>
-                                            <option value="3">England</option>
-                                            <option value="4" selected="selected">INDIA</option>
-                                            <option value="5">Others</option>
-                                        </select>
-                                    </p>
-                                    <p>
-                                        <label for="phone">Phone Number <span></span></label>
-                                        <input type="number" id="phone" required>
-                                    </p>
-                                    <p>
-                                        <label>Order Notes (optional)</label>
-                                        <textarea cols="30" rows="10"></textarea>
-                                    </p>
-                                    <p class="checkset">
-                                        <input type="checkbox" id="anaccount">
-                                        <label for="anaccount">Create an Account?</label>
-                                    </p>
-                                </form>
-                                <div class="shipping-method">
-                                    <h2>Shipping Methods</h2>
-                                    <p class="checkset">
-                                        <input type="radio" checked>
-                                        <label>Rs.200.00 Flate Rate</label>
-                                    </p>
+                        <div class="column">
+                            <div class="holder">
+                                <div class="row sidebar">
+                                    <div class="filter">
+                                        <div class="filter-block">
+                                            <h4>Category</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="bags">
+                                                    <label for="bags">
+                                                        <span class="checked"></span>
+                                                        <span>Bags</span>
+                                                    </label>
+                                                    <span class="count">15</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="beauty">
+                                                    <label for="beauty">
+                                                        <span class="checked"></span>
+                                                        <span>Beauty</span>
+                                                    </label>
+                                                    <span class="count">2</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="clothing">
+                                                    <label for="clothing">
+                                                        <span class="checked"></span>
+                                                        <span>Clothing</span>
+                                                    </label>
+                                                    <span class="count">3</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="jewelry">
+                                                    <label for="jewelry">
+                                                        <span class="checked"></span>
+                                                        <span>Jewelry</span>
+                                                    </label>
+                                                    <span class="count">7</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="shoes">
+                                                    <label for="shoes">
+                                                        <span class="checked"></span>
+                                                        <span>Shoes</span>
+                                                    </label>
+                                                    <span class="count">1</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="filter-block">
+                                            <h4>Activity</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="athletic">
+                                                    <label for="athletic">
+                                                        <span class="checked"></span>
+                                                        <span>Athletic</span>
+                                                    </label>
+                                                    <span class="count">11</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="lounge">
+                                                    <label for="lounge">
+                                                        <span class="checked"></span>
+                                                        <span>Lounge</span>
+                                                    </label>
+                                                    <span class="count">13</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="outdoor">
+                                                    <label for="outdoor">
+                                                        <span class="checked"></span>
+                                                        <span>Outdoor</span>
+                                                    </label>
+                                                    <span class="count">7</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="travel">
+                                                    <label for="travel">
+                                                        <span class="checked"></span>
+                                                        <span>Travel</span>
+                                                    </label>
+                                                    <span class="count">3</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="urban">
+                                                    <label for="urban">
+                                                        <span class="checked"></span>
+                                                        <span>Urban</span>
+                                                    </label>
+                                                    <span class="count">4</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="filter-block">
+                                            <h4>Brands</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="nike">
+                                                    <label for="nike">
+                                                        <span class="checked"></span>
+                                                        <span>Nike</span>
+                                                    </label>
+                                                    <span class="count">9</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="louisvutton">
+                                                    <label for="louisvutton">
+                                                        <span class="checked"></span>
+                                                        <span>Louis Vutton</span>
+                                                    </label>
+                                                    <span class="count">7</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="hermes">
+                                                    <label for="hermes">
+                                                        <span class="checked"></span>
+                                                        <span>Hermes</span>
+                                                    </label>
+                                                    <span class="count">2</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="gucci">
+                                                    <label for="gucci">
+                                                        <span class="checked"></span>
+                                                        <span>Gucci</span>
+                                                    </label>
+                                                    <span class="count">6</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="zara">
+                                                    <label for="zara">
+                                                        <span class="checked"></span>
+                                                        <span>Zara</span>
+                                                    </label>
+                                                    <span class="count">5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="filter-block products">
+                                            <h4>Color</h4>
+
+                                            <ul class="bycolor variant flexitem">
+                                                <li>
+                                                    <input type="radio" name="color" id="cogrey">
+                                                    <label for="cogrey" class="circle"></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="color" id="coblue">
+                                                    <label for="coblue" class="circle"></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="color" id="cogreen">
+                                                    <label for="cogreen" class="circle"></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="color" id="cored">
+                                                    <label for="cored" class="circle"></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="color" id="colight">
+                                                    <label for="colight" class="circle"></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="filter-block pricing">
+                                            <h4>Price</h4>
+                                            <div class="byprice">
+                                                <div class="range-track">
+                                                    <input type="range" value="25000" min="0" max="696969">
+                                                </div>
+                                                <div class="price-range">
+                                                    <span class="price-form">Rs.500</span>
+                                                    <span class="price-to">Rs.5000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="primary-checkout">
-                                    <button type="submit" class="primary-button">Place Order</button>
+                                <div class="section">
+                                    <div class="row">
+                                        <div class="cat-head">
+                                            <div class="breadcrumb">
+                                                <ul class="flexitem">
+                                                    <li><a href="#">Home</a></li>
+                                                    <li>Women</li>
+                                                </ul>
+                                            </div>
+                                            <div class="page-title">
+                                                <h1>Women</h1>
+                                            </div>
+                                            <div class="cat-description">
+                                                <p>The League of Women Shoppers (LWS) was focused on using collective consumer power to reform the conditions of workers.[1] LWS created "buyers' strikes" which often led to boycotts and also raised awareness of various social issues.[2] They also supported African-American buyers' campaigns, such as "Don't buy where you can't work."[2] LWS saw consumable materials as social artifacts which could be judged on how they were produced and brought to the consumer.[3] LWS promoted the idea that women could look into how goods were made, who produced them, and how these people were treated.[4] A group of consumers, mostly women, could help bring more justice through thoughtful choices in shopping.[5]</p>
+                                            </div>
+                                            <div class="cat-navigation flexitem">
+                                                <div class="item-filter desktop-hide">
+                                                    <a href="#" class="filter-trigger labal">
+                                                        <i class="ri-menu-2-line ri-2x"></i>
+                                                        <span>Filter</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item-sortir">
+                                                    <div class="label">
+                                                        <span class="mobile-hide">Sort by default</span>
+                                                        <div class="desktop-hide">Default</div>
+                                                        <i class="ri-arrow-down-s-line"></i>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Default</li>
+                                                        <li>Product Name</li>
+                                                        <li>Price</li>
+                                                        <li>Brand</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item-perpage mobile-hide">
+                                                    <div class="label">Items 10 per page</div>
+                                                    <div class="desktop-hide">10</div>
+                                                </div>
+                                                <div class="item-options">
+                                                    <div class="label">
+                                                        <span class="mobile-hide">Show 10 per page</span>
+                                                        <div class="desktop-hide">10</div>
+                                                        <i class="ri-arrow-down-s-line"></i>
+                                                    </div>
+                                                    <ul>
+                                                        <li>10</li>
+                                                        <li>20</li>
+                                                        <li>30</li>
+                                                        <li>All</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products main flexwrap">
+                                        <!-- featured copy -->
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-1.html"> 
+                                                        <img src="assets/products/apparel1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>25%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(69)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-1.html">Under Armor Men's Tech</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.1,216.69</span>
+                                                    <span class="normal mini-text">Rs.2,354.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>65% Polyster, 35% Cotton</li>
+                                                        <li>Imported</li>
+                                                        <li>Machine Wash</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-2.html"> 
+                                                        <img src="assets/products/apparel2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>29%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(569)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-2.html">Jacquard-knit jumper</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.586.69</span>
+                                                    <span class="normal mini-text">Rs.899.00</span>
+                                                </div>
+        
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Polyster, Cotton</li>
+                                                        <li>Pull On Closure</li>
+                                                        <li>Fashion Personality</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-3.html"> 
+                                                        <img src="assets/products/apparel3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>29%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(2,569)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-3.html">Oversized double-breasted jacket</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.1,756.69</span>
+                                                    <span class="normal mini-text">Rs.2,652.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>65% Polyster, 35% Cotton</li>
+                                                        <li>Made in INDIA</li>
+                                                        <li>Machine Wash</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer.html"> 
+                                                        <img src="assets/products/apparel4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>69%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(2,569)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer.html">Checked pyjamas</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.836.69</span>
+                                                    <span class="normal mini-text">Rs.2,699.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Corduroy</li>
+                                                        <li>Imported</li>
+                                                        <li>Button closure closure</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-single.html"> 
+                                                        <img src="assets/products/shoe1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>29%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(2,569)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-single.html">Men Slip On Shoes Casual with Arch Support Insoles</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.836.69</span>
+                                                    <span class="normal mini-text">Rs.2,699.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Made in INDIA</li>
+                                                        <li>Rubber sole</li>
+                                                        <li>Durable leather overlays</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-4.html"> 
+                                                        <img src="assets/products/shoe2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>35%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(542)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-4.html">Furry Boots Boots For Women  (Tan)
+                                                </a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.1,662.69</span>
+                                                    <span class="normal mini-text">Rs.2,712.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Made in INDIA</li>
+                                                        <li>Rubber sole</li>
+                                                        <li>Durable leather overlays</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-5.html"> 
+                                                        <img src="assets/products/shoe3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>25%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(622)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-5.html">Walking Shoe Sneakers Womens</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.1,222.69</span>
+                                                    <span class="normal mini-text">Rs.2,154.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Made in INDIA</li>
+                                                        <li>Rubber sole</li>
+                                                        <li>Durable leather overlays</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="media">
+                                                <div class="thumbnail object-cover">
+                                                    <a href="page-offer-6.html"> 
+                                                        <img src="assets/products/shoe4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="hoverable">
+                                                    <ul>
+                                                        <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="discount circle flexcentre"><span>24%</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="rating">
+                                                    <div class="stars"></div>
+                                                    <span class="mini-text">(62)</span>
+                                                </div>
+                                                <h3 class="main-links"><a href="page-offer-6.html">Boots For Women  (Off White)</a></h3>
+                                                <div class="price">
+                                                    <span class="current">Rs.2,226.69</span>
+                                                    <span class="normal mini-text">Rs.4,554.00</span>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="mini-text">
+                                                        <li>Imported</li>
+                                                        <li>Rubber sole</li>
+                                                        <li>Durable leather overlays</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="load-more flexcenter">
+                                        <a href="" class="secondary-button">Load more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item right">
-                                <h2>Order Summary</h2>
-                                <div class="summary-order is_sticky">
-                                    <div class="summary-totals">
-                                        <ul>
-                                            <li>
-                                                <span>Subtotal</span>
-                                                <span>Rs.16,000.00</span>
-                                            </li>
-                                            <li>
-                                                <span>Discount</span>
-                                                <span>Rs.500.00</span>
-                                            </li>
-                                            <li>
-                                                <span>Shipping: Flat</span>
-                                                <span>Rs.40.00</span>
-                                            </li>
-                                            <li>
-                                                <span>Total</span>
-                                                <strong>Rs.16,000.00</strong>
-                                            </li>
-                                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="banners">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="banner flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="assets/banner/banner1.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Brutal Sale!</h4>
+                                            <h3><span>Get the deal in here</span><br>Living Room Chair</h3>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
                                     </div>
-                                    <ul class="products mini">
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <a href="page-offer-9.html">
-                                                    <img src="assets/products/home2.jpg" alt=""></a>
+                                </div>
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image get-gray">
+                                            <img src="assets/banner/banner2.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Brutal Sale!</h4>
+                                            <h3><span>Discount everyday</span><br>Office Outfit</h3>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- banners -->
+
+                            <div class="product-categories flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <a href="https://www.amazon.in/s?k=makeup&crid=2UE7WZAT43K39&sprefix=mak%2Caps%2C481&ref=nb_sb_ss_ts-doa-p_4_3">
+                                                <img src="assets/banner/procat1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Beauty</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="https://www.amazon.in/s?k=makeup&crid=2UE7WZAT43K39&sprefix=mak%2Caps%2C481&ref=nb_sb_ss_ts-doa-p_4_3">
+                                                    Makeup</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=skin+care+women&crid=14SS5VD1GSSS9&sprefix=skin+care+wo%2Caps%2C1326&ref=nb_sb_ss_ts-doa-p_1_12">
+                                                    Skin Care</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=hair+care+women&crid=3HNUUFAC7YACR&sprefix=hair+care+women%2Caps%2C389&ref=nb_sb_noss_1">
+                                                    Hair Care</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=Fragrance+women&crid=28RZBGEHT6XZ2&sprefix=fragrance+women%2Caps%2C555&ref=nb_sb_noss_1">
+                                                    Fragrance</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=Foot+%26+Hand+Carewomen&crid=15TO4X9OPBR9Q&sprefix=foot+%26+hand+carewomen%2Caps%2C537&ref=nb_sb_noss">
+                                                    Foot & Hand Care</a>
+                                                </li>
+                                            </ul>
+                                            <div class="second-links">
+                                                <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
                                             </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Cealing Light Modern</p>
-                                                <span class="price">
-                                                    <span>Rs.550.00</span>
-                                                    <span>x 2</span>
-                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <a href="https://www.amazon.in/gp/browse.html?node=1389401031&ref_=nav_em_sbc_mobcomp_all_mobiles_0_2_8_2">
+                                                <img src="assets/banner/procat2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Gatdets</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="https://www.amazon.in/b/?_encoding=UTF8&node=1388977031&ref_=sv_top_elec_mega_5">
+                                                    Camera</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/gp/browse.html?node=1389401031&ref_=nav_em_sbc_mobcomp_all_mobiles_0_2_8_2">
+                                                    Cell Phone</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/b/?_encoding=UTF8&node=1375248031&ref_=sv_top_elec_mega_6">
+                                                    Computers</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=gps&ref=nb_sb_noss">
+                                                    GPS & NAvigation</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=headphones&crid=3BEG0SFVZRNEZ&sprefix=head%2Caps%2C435&ref=nb_sb_ss_ts-doa-p_2_4">
+                                                    Headphones</a>
+                                                </li>
+                                            </ul>
+                                            <div class="second-links">
+                                            <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
                                             </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <a href="page-offer-7.html">
-                                                <img src="assets/products/home3.jpg" alt="">
-                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <a href="https://www.amazon.in/s?k=home+decor&crid=3F7EI2F6WO52L&sprefix=home+%2Caps%2C404&ref=nb_sb_ss_ts-doa-p_3_5">
+                                                <img src="assets/banner/procat3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Home Decoration</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="https://www.amazon.in/gp/browse.html?node=5925789031&ref_=nav_em_sbc_hk_kitchendining_0_2_12_3">
+                                                    Kitchen</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=dining+room&crid=33EFFMD95JYWY&sprefix=dining+roo%2Caps%2C324&ref=nb_sb_ss_ts-doa-p_2_10">
+                                                    Dining Room</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=Pantry&crid=2351LDRDB3UR7&sprefix=pantry%2Caps%2C447&ref=nb_sb_noss_1">
+                                                    Pantry</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=pet+room&crid=3EI8LD14ZYX1L&sprefix=pet+room%2Caps%2C404&ref=nb_sb_noss_1">
+                                                    Pet Room</a>
+                                                </li>
+                                                <li><a href="https://www.amazon.in/s?k=Breakfast+Nook&crid=3UZXPANTBZA5A&sprefix=breakfast+nook%2Caps%2C601&ref=nb_sb_noss_1">
+                                                    Breakfast Nook</a>
+                                                </li>
+                                            </ul>
+                                            <div class="second-links">
+                                                <a href="https://www.amazon.in/ref=nav_logo" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
                                             </div>
-                                            <div class="item-content">
-                                                <p>Azealia Reclaimed Wood Cabinet In Distress Finish</p>
-                                                <span class="price">
-                                                    <span>Rs.6,000.00</span>
-                                                    <span>x 2</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <a href="page-offer-8.html">
-                                                    <img src="assets/products/home4.jpg" alt=""></a>
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Louis XIV Armchair</p>
-                                                <span class="price">
-                                                    <span>Rs.550.00</span>
-                                                    <span>x 2</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <img src="assets/products/home5.jpg" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Cealing Light Modern</p>
-                                                <span class="price">
-                                                    <span>Rs.2,000.00</span>
-                                                    <span>x 2</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -921,34 +1438,6 @@
             </div>
         </div>
         <!-- search bottom -->
-
-        <div id="modal" class="modal">
-            <div class="content flexcol">
-                <div class="image object-cover">
-                    <img src="assets/products/add.jpg" alt="">
-                </div>
-                <h2>Get the latest deals and coupons</h2>
-                <p class="mobile-hide">A lot of men wonder why women simply love to shop. Is it because they 're into fashion that much? Do they hate money that 's why they keep on spending it? Do they really have to buy new set of clothes, shoes, bags, almost every month? </p>
-                <form action="" class="search">
-                    <span class="icon-large"><span class="ri-mail-line"></span></span>
-                    <input type="mail" placeholder="Your email address">
-                    <button>Register</button>
-                </form>
-                <a href="#" class="mini-text">Do not show me this again</a>
-                <a href="#" class="t-close modalclose flexcenter">
-                    <i class="ri-close-line"></i>
-                </a>
-            </div>
-        </div>
-        <!-- ------Modal------ -->
-
-        <div class="backtotop">
-            <a href="#" class="flexcol">
-                <i class="ri-arrow-up-circle-fill"></i>
-                <span>Top</span>
-            </a>
-        </div>
-
 
         <div class="overlay"></div>
 
